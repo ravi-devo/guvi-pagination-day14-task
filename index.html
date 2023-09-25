@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header>
+            <h1 class="text-center" id="title">DOM Pagination Task</h1>
+            <p class="text-center" id="description">This is the pagination task description</p>
+        </header>
+        <main>
+            <p>
+                Page number: <span id="page-no"></span>
+            </p>
+            <p>
+                Name: <span id="name"></span>
+            </p>
+            <p>
+                Email: <span id="email"></span>
+            </p>
+        </main>
+        <footer>
+            <div class="table-responsive d-flex justify-content-center" id="buttons">
+                <table class="table table-bordered table-primary">
+                    <tbody>
+                        <tr>
+                            <td id="first">
+                                <button onclick="callPage(0)">First
+                                </button>
+                            </td>
+                            <td>
+                                <button onclick="previousFunc()">Previous
+                                </button></td>
+                            <td onclick="callPage(0)">
+                                1
+                            </td>
+                            <td onclick="callPage(1)">
+                                2
+                            </td>
+                            <td onclick="callPage(2)">
+                                3
+                            </td>
+                            <td onclick="callPage(3)">
+                                4
+                            </td>
+                            <td onclick="callPage(4)">
+                                5
+                            </td>
+                            <td onclick="callPage(5)">
+                                6
+                            </td>
+                            <td onclick="callPage(6)">
+                                7
+                            </td>
+                            <td onclick="callPage(7)">
+                                8
+                            </td>
+                            <td onclick="callPage(8)">
+                                9
+                            </td>
+                            <td onclick="callPage(9)">
+                                10
+                            </td>
+                            <td><button onclick="nextFunc()">Next
+                                </button></td>
+                            <td onclick="callPage(9)"><button onclick="callPage(9)">Last
+                                </button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+
+</html>
